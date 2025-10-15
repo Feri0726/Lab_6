@@ -26,6 +26,12 @@ int main()
     {
         printf("%dth letter='%c', code=%d\n", i, str1[i], str2[i]);
     }
+    printf("%lu - %lu\n", strlen(str1), strlen(str2));
+    printf("%d\n", strcmp(str1, str2));
+    printf("%d\n", strcmp(strcpy(str2, str1), str1));
+    char str3[61];
+    strcpy(str3, str1);
+    printf("%s", strcat(str3, str1));
 
     return 0;
 }
